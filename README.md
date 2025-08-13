@@ -24,16 +24,16 @@ Troubleshooting:
 **Make sure to rebuild the package, source the workspace again, and then run the GUI after editing and saving any package files to ensure changes are reflected!**
 
 \
-**If your board's port is not "/dev/ttyACM0"**:
+**If your board's port is not "/dev/ttyACM0":**
 
 Update **line 15** of "serial_node.py" (spine_robot_gui/src/spine_robot_gui/spine_robot_gui/serial_node.py) to reflect the correct port
 
 \
-**If you receive an error similar to: "Could not open port /dev/ttyACM0 . . . No such file or directory: '/dev/ttyACM0' . . ."**:
+**If you receive an error similar to: "Could not open port /dev/ttyACM0 . . . No such file or directory: '/dev/ttyACM0' . . .":**
 
 Make sure your Arduino board is connected and/or update "serial_node.py" as described above, if necessary
 
 \
-**If you receive an error similar to: "Could not open port /dev/ttyACM0 . . . Device or resource busy: '/dev/ttyACM0' . . ."**:
+**If you receive an error similar to: "Could not open port /dev/ttyACM0 . . . Device or resource busy: '/dev/ttyACM0' . . .":**
 
 Make sure the Serial Monitor in the Arduino IDE is not open and that you're not otherwise communicating with/sending data to the Arduino
